@@ -83,8 +83,7 @@ hr {
 
 #addInput{
   width: 237px;
-  height: 17px;
-  background-color: white;
+  height: 17px;  
 }
 #addInput::placeholder{
   color: blue;

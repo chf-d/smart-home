@@ -64,7 +64,7 @@ export default function AddRoom(props) {
                 <option value="מטבח">מטבח</option>
             </select>
             <br />
-            <input className='select' id='addInput' placeholder="שם החדר" onChange={validRoomName} />
+            <input className='select' id='addInput' autoComplete='off' placeholder="שם החדר" onChange={validRoomName} />
             <br />
             <select className='select' onChange={validColorSelect}>
                 <option value="0">בחר צבע חדר</option>
