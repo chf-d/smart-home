@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HashRouter as router, Switch, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Home from './Home'
 import AddRoom from './AddRoom'
 import Room from './Room'
