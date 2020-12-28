@@ -78,6 +78,7 @@ hr {
   width: 250px;
   height: 30px;
   outline: none;
+  background-color: white !important;
 }
 
 #addInput{
@@ -146,6 +147,7 @@ hr {
 }
 
 #selectItens{
+  vertical-align: top;
   width: 190px;
   margin-left: 0px;
   border-radius:0px 5px 5px 0px ;
@@ -159,6 +161,7 @@ hr {
   border-radius:5px 0px 0px 5px ;
   border: 1.5px solid blue;
   padding: 0px;
+  margin-top: 10px;
 }
 
 
