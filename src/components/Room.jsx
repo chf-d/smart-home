@@ -18,7 +18,7 @@ export default function Room(props) {
             if (productValue.name != 0) {
 
                 if (props.rooms[props.index].product.length >= 5) {
-                    alert('יותר מ5 מוצרים')
+                    alert('אפשר רק 5 מוצרים לחדר')
                 }
 
                 else if (productValue.name == 'דוד') {
@@ -29,7 +29,7 @@ export default function Room(props) {
                     }
                     else {
 
-                        alert('דוד אפשר רק בשירותים')
+                        alert('דוד אפשר רק בשירותים/אמבטיה')
                     }
                 }
 
@@ -46,7 +46,7 @@ export default function Room(props) {
 
                     if (counter != 0) {
 
-                        alert('אפשר רק מערכת סטריאו אחת')
+                        alert('אפשר רק מערכת סטריאו אחת לחדר')
                     }
                     else {
 

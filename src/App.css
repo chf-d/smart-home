@@ -78,13 +78,13 @@ hr {
   width: 250px;
   height: 30px;
   outline: none;
-  background-color: white !important;
+  background-color: white;
 }
 
 #addInput{
   width: 237px;
   height: 17px;
-  background-color: white !important;
+  background-color: white;
 }
 #addInput::placeholder{
   color: blue;
