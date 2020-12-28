@@ -48,7 +48,7 @@ export default function AddRoom(props) {
     let add = () => {
 
         if (select != true || name != true || color != true) {
-            alert('error')
+            alert('לא נבחר כל הפרטים')
         }
         else {
             props.addRoom(selectValue, nameValue, colorValue)
