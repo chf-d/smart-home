@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/smart-home/static/css/main.98b51e0e.chunk.css",
-    "main.js": "/smart-home/static/js/main.666f94b7.chunk.js",
-    "main.js.map": "/smart-home/static/js/main.666f94b7.chunk.js.map",
+    "main.js": "/smart-home/static/js/main.85cbfedd.chunk.js",
+    "main.js.map": "/smart-home/static/js/main.85cbfedd.chunk.js.map",
     "runtime-main.js": "/smart-home/static/js/runtime-main.0e17785d.js",
     "runtime-main.js.map": "/smart-home/static/js/runtime-main.0e17785d.js.map",
-    "static/js/2.bee69071.chunk.js": "/smart-home/static/js/2.bee69071.chunk.js",
-    "static/js/2.bee69071.chunk.js.map": "/smart-home/static/js/2.bee69071.chunk.js.map",
+    "static/js/2.5c77b627.chunk.js": "/smart-home/static/js/2.5c77b627.chunk.js",
+    "static/js/2.5c77b627.chunk.js.map": "/smart-home/static/js/2.5c77b627.chunk.js.map",
     "index.html": "/smart-home/index.html",
     "static/css/main.98b51e0e.chunk.css.map": "/smart-home/static/css/main.98b51e0e.chunk.css.map",
-    "static/js/2.bee69071.chunk.js.LICENSE.txt": "/smart-home/static/js/2.bee69071.chunk.js.LICENSE.txt",
-    "static/media/logo.c3e8bbbf.svg": "/smart-home/static/media/logo.c3e8bbbf.svg"
+    "static/js/2.5c77b627.chunk.js.LICENSE.txt": "/smart-home/static/js/2.5c77b627.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e17785d.js",
-    "static/js/2.bee69071.chunk.js",
+    "static/js/2.5c77b627.chunk.js",
     "static/css/main.98b51e0e.chunk.css",
-    "static/js/main.666f94b7.chunk.js"
+    "static/js/main.85cbfedd.chunk.js"
   ]
 }
