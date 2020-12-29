@@ -4,7 +4,9 @@ import Lottie from 'react-lottie'
 import Home from './Home'
 import AddRoom from './AddRoom'
 import Room from './Room'
-import AnimationData from '../img/logo.json';
+import logoAnimationData from '../img/logo.json';
+import AddRoomAnimationData from '../img/addRoom.json';
+
 import '../App.css';
 
 function App() {
@@ -12,10 +14,18 @@ function App() {
   const [rooms, setRooms] = useState([])
   const [index, setindex] = useState('')
 
-  const defaultOptions = {
+  const logoDefaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: AnimationData,
+    animationData: logoAnimationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
+  const AddRoomDefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: AddRoomAnimationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
@@ -94,9 +104,9 @@ function App() {
   return (
     <div className="App">
       <Lottie
-        options={defaultOptions}
-        height={220}
-        width={220}
+        options={logoDefaultOptions}
+        height={170}
+        width={170}
       />
       <hr />
 
@@ -119,7 +129,14 @@ function App() {
                     getIndex={getIndex} />
                 })}
                 <br />
-                <Link to='/AddRoom'> <button id='addRoomButton'>צור חדר חדש</button> </Link>
+
+                <Link to='/AddRoom'>
+                  <Lottie
+                    options={AddRoomDefaultOptions}
+                    height={100}
+                    width={100}
+                  />
+                </Link>
               </div>
             )
           }} />

@@ -33,11 +33,6 @@ p{
   margin: 0px;
 }
 
-#logo{
-  padding-top: 70px;
-  width: 100px;
-}
-
 #logoH1{
   margin: 0px;
 }
@@ -52,21 +47,6 @@ hr {
 
 #hr2{
   margin-bottom: 100px;
-}
-
-#addRoomButton{
-  color: blue;
-  background-color: white;
-  height: 60px;
-  width: 70px;
-  border-radius: 10px;
-  border: 1.5px solid blue;
-  margin-top: 50px;
-}
-#addRoomButton:hover{
-  color: white;
-  background-color: blue;
-  border: none;
 }
 
 .select{
