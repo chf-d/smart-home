@@ -1,15 +1,25 @@
 import React, { useState } from 'react'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Lottie from 'react-lottie'
 import Home from './Home'
 import AddRoom from './AddRoom'
 import Room from './Room'
-import logo from '../img/logo.svg';
+import AnimationData from '../img/logo.json';
 import '../App.css';
 
 function App() {
 
   const [rooms, setRooms] = useState([])
   const [index, setindex] = useState('')
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: AnimationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
 
 
   const addRoom = (type, name, color) => {
@@ -83,7 +93,11 @@ function App() {
 
   return (
     <div className="App">
-      <img id='logo' src={logo} />
+      <Lottie
+        options={defaultOptions}
+        height={220}
+        width={220}
+      />
       <hr />
 
       <h1 id='logoH1'>בית חכם</h1>
