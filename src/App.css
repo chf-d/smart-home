@@ -61,21 +61,26 @@ hr {
   background-color: white;
 }
 
+#select2{
+  margin-top: 5px;
+}
+
 #addInput{
   width: 237px;
-  height: 17px;  
+  height: 17px; 
+  margin-bottom: 3px; 
 }
 #addInput::placeholder{
   color: blue;
 }
 
-#addButton{
-  background-color: white;
-}
-#addButton:hover{
-  color: white;
-  background-color: blue;
-  border: none;
+#nameError{
+  color: red;
+  width: 250px;
+  height: 12px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 12px;
 }
 
 #roomButtonsDiv{
@@ -83,12 +88,13 @@ hr {
 }
 
 .roomButton{
-  color: white;
-  height: 60px;
+  background-color: white;
+  height: 70px;
   width: 70px;
-  border-radius: 10px;
-  border: none;
+  border-radius: 50px;
+  border: 2px solid ;
   margin: 5px;
+  overflow: hidden;
 }
 
 #roomDiv{
@@ -118,12 +124,9 @@ hr {
 
 .itemButtons{
   vertical-align: top;
-  color: white;
-  height: 50px;
-  width: 60px;
-  border-radius: 10px;
   border: none;
   margin: 5px;
+  background-color: white;
 }
 
 #selectItens{
@@ -145,3 +148,18 @@ hr {
 }
 
 
+#AirConditionerOff{
+  width: 100px;
+}
+
+#BoilerOff{
+  height: 100px;
+}
+
+#StereoOff{
+  width: 100px;
+}
+
+#LightOff{
+  height: 50px;
+}

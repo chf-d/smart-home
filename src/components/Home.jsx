@@ -14,8 +14,8 @@ export default function Home(props) {
                 <button
                     className='roomButton'
                     onClick={sendIndex}
-                    style={{ backgroundColor: props.color }}
-                >{props.name}</button> </Link>
+                    style={{ borderColor: props.color }}
+                >{props.roomAnimation}</button> </Link>
         </div>
     )
 }

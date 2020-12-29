@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import Lottie from 'react-lottie'
 import Home from './Home'
 import AddRoom from './AddRoom'
 import Room from './Room'
-import logoAnimationData from '../img/logo.json';
-import AddRoomAnimationData from '../img/addRoom.json';
-
+import Lottie from 'react-lottie'
+import logoAnimationData from '../img/logo.json'
+import AddRoomAnimationData from '../img/addRoom.json'
+import AirConditionerOn from '../img/Air conditioner on.json'
+import AirConditionerOff from '../img/Air-conditioner-off.jpg'
+import BoilerOn from '../img/boiler on.json'
+import BoilerOff from '../img/boiler-off.jpg'
+import StereoOn from '../img/Stereo on.json'
+import StereoOff from '../img/Stereo-off.jpg'
+import LightOn from '../img/light on.json'
+import LightOff from '../img/light-off.jpg'
 import '../App.css';
 
 function App() {
@@ -30,10 +37,42 @@ function App() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }
+  const AirConditioner = {
+    loop: true,
+    autoplay: true,
+    animationData: AirConditionerOn,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
+  const Boiler = {
+    loop: true,
+    autoplay: true,
+    animationData: BoilerOn,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
+  const Stereo = {
+    loop: true,
+    autoplay: true,
+    animationData: StereoOn,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
+  const Light = {
+    loop: true,
+    autoplay: true,
+    animationData: LightOn,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
 
 
-  const addRoom = (type, name, color) => {
-    let newRoom = { type: type, name: name, color: color, product: [] }
+  const addRoom = (type, name, color, roomAnimation) => {
+    let newRoom = { type: type, name: name, color: color, roomAnimation: roomAnimation, product: [] }
     setRooms([...rooms, newRoom])
   }
 
@@ -51,22 +90,72 @@ function App() {
 
   }
 
-  let ChangeButtonColor = (roomIndex, buttonIndex) => {
+  let turnOffOn = (roomIndex, buttonIndex) => {
 
     let updatedProduct = rooms[roomIndex].product.map((item, index) => {
 
       if (index == buttonIndex) {
+        if (item.name == 'מזגן') {
 
-        if (item.color == 'red') {
-          return { name: item.name, color: 'green' }
+          let off = <img id='AirConditionerOff' src={AirConditionerOff} />
+          let on = <Lottie options={AirConditioner} height={50} width={100} />
+
+          if (item.show.type == "img") {
+
+            return { name: item.name, show: on }
+
+          }
+          else {
+            return { name: item.name, show: off }
+          }
         }
-        else {
-          return { name: item.name, color: 'red' }
+        else if (item.name == 'דוד') {
+
+          let off = <img id='BoilerOff' src={BoilerOff} />
+          let on = <Lottie options={Boiler} height={100} width={75} />
+
+          if (item.show.type == "img") {
+
+            return { name: item.name, show: on }
+
+          }
+          else {
+            return { name: item.name, show: off }
+          }
         }
+        else if (item.name == 'מערכת סטריאו') {
+
+          let off = <img id='StereoOff' src={StereoOff} />
+          let on = <Lottie options={Stereo} height={50} width={100} />
+
+          if (item.show.type == "img") {
+
+            return { name: item.name, show: on }
+
+          }
+          else {
+            return { name: item.name, show: off }
+          }
+        }
+        else if (item.name == 'מנורה') {
+
+          let off = <img id='LightOff' src={LightOff} />
+          let on = <Lottie options={Light} height={50} width={50} />
+
+          if (item.show.type == "img") {
+
+            return { name: item.name, show: on }
+
+          }
+          else {
+            return { name: item.name, show: off }
+          }
+        }
+
       }
 
       else {
-        return { name: item.name, color: item.color }
+        return { name: item.name, show: item.show }
       }
     })
 
@@ -125,6 +214,7 @@ function App() {
                   return <Home
                     name={item.name}
                     color={item.color}
+                    roomAnimation={item.roomAnimation}
                     index={index}
                     getIndex={getIndex} />
                 })}
@@ -149,7 +239,7 @@ function App() {
                 rooms={rooms}
                 index={index}
                 addProduct={addProduct}
-                ChangeButtonColor={ChangeButtonColor}
+                turnOffOn={turnOffOn}
               />
             )
           }} />
