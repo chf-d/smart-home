@@ -171,6 +171,7 @@ function App() {
               type: item.type,
               name: item.name,
               color: item.color,
+              roomAnimation: item.roomAnimation,
               product: updatedProduct
             }
           )
@@ -182,6 +183,7 @@ function App() {
               type: item.type,
               name: item.name,
               color: item.color,
+              roomAnimation: item.roomAnimation,
               product: item.product
             }
           )

@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/smart-home/static/css/main.88a36389.chunk.css",
-    "main.js": "/smart-home/static/js/main.13b9475e.chunk.js",
-    "main.js.map": "/smart-home/static/js/main.13b9475e.chunk.js.map",
+    "main.css": "/smart-home/static/css/main.756271ad.chunk.css",
+    "main.js": "/smart-home/static/js/main.25250002.chunk.js",
+    "main.js.map": "/smart-home/static/js/main.25250002.chunk.js.map",
     "runtime-main.js": "/smart-home/static/js/runtime-main.0e17785d.js",
     "runtime-main.js.map": "/smart-home/static/js/runtime-main.0e17785d.js.map",
-    "static/js/2.dc437c6b.chunk.js": "/smart-home/static/js/2.dc437c6b.chunk.js",
-    "static/js/2.dc437c6b.chunk.js.map": "/smart-home/static/js/2.dc437c6b.chunk.js.map",
+    "static/js/2.7e0d3c8d.chunk.js": "/smart-home/static/js/2.7e0d3c8d.chunk.js",
+    "static/js/2.7e0d3c8d.chunk.js.map": "/smart-home/static/js/2.7e0d3c8d.chunk.js.map",
     "index.html": "/smart-home/index.html",
-    "static/css/main.88a36389.chunk.css.map": "/smart-home/static/css/main.88a36389.chunk.css.map",
-    "static/js/2.dc437c6b.chunk.js.LICENSE.txt": "/smart-home/static/js/2.dc437c6b.chunk.js.LICENSE.txt"
+    "static/css/main.756271ad.chunk.css.map": "/smart-home/static/css/main.756271ad.chunk.css.map",
+    "static/js/2.7e0d3c8d.chunk.js.LICENSE.txt": "/smart-home/static/js/2.7e0d3c8d.chunk.js.LICENSE.txt",
+    "static/media/Air-conditioner-off.c0965d1b.jpg": "/smart-home/static/media/Air-conditioner-off.c0965d1b.jpg",
+    "static/media/Stereo-off.060b24d0.jpg": "/smart-home/static/media/Stereo-off.060b24d0.jpg",
+    "static/media/boiler-off.b750aa38.jpg": "/smart-home/static/media/boiler-off.b750aa38.jpg",
+    "static/media/light-off.6a8e53a7.jpg": "/smart-home/static/media/light-off.6a8e53a7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0e17785d.js",
-    "static/js/2.dc437c6b.chunk.js",
-    "static/css/main.88a36389.chunk.css",
-    "static/js/main.13b9475e.chunk.js"
+    "static/js/2.7e0d3c8d.chunk.js",
+    "static/css/main.756271ad.chunk.css",
+    "static/js/main.25250002.chunk.js"
   ]
 }
